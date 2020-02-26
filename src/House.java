@@ -8,7 +8,8 @@ public class House extends Dwelling{
     public int garageSize;
 
     public House() {
-
+        acreage = 0.0;
+        garageSize = 0;
     }
 
     public double getAcreage() {

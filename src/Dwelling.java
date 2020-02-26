@@ -13,7 +13,12 @@ public class Dwelling {
     public double bathrooms;
 
     public Dwelling(){
-
+        streetAddress = "";
+        city = "";
+        state = "";
+        zip = "";
+        bedrooms = 0;
+        bathrooms = 0.0;
     }
 
     public String getStreetAddress() {

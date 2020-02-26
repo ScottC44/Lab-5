@@ -9,6 +9,8 @@ public class Apartment extends Dwelling{
     public boolean laundry;
 
     public Apartment(){
+        apptNum = "";
+        laundry = true;
 
     }
     public String getApptNum() {
