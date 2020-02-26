@@ -71,7 +71,7 @@ public class Dwelling {
 
     @Override
     public String toString() {
-        return streetAddress + "|" + city + "|" + state + "|" + zip + "|" + bedrooms + "|" + bathrooms;
+        return streetAddress + " | " + city + " | " + state + " | " + zip + " | " + bedrooms + " | " + bathrooms;
     }
 }
 

@@ -31,7 +31,7 @@ public class Apartment extends Dwelling{
 
     @Override
     public String toString() {
-        return super.toString() + "|" + apptNum + "|" + (laundry ? "Laundry" : "No Laundry");
+        return super.toString() + " | " + apptNum + " | " + (laundry ? "Laundry" : "No Laundry");
     }
 }
 

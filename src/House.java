@@ -30,7 +30,7 @@ public class House extends Dwelling{
 
     @Override
     public String toString() {
-        return super.toString() + "|" + acreage + "|" + garageSize;
+        return super.toString() + " | " + acreage + " | " + garageSize;
     }
 
 }
