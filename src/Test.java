@@ -2,16 +2,19 @@
 COMP167
 LAB 5
  */
+import javax.swing.*;
 import java.io.*;
 import java.util.*;
 
 public class Test {
+
+    public static List<Dwelling> dwellingList = new ArrayList<>();
+
     public static void main(String[] args) throws IOException {
-        List<Dwelling> dwellingList = new ArrayList<>();
         Scanner read = new Scanner(new File("dwelling.txt"));
         while (read.hasNextLine()) {
             String line = read.nextLine();
-            if(line.isEmpty()) continue;
+            if (line.isEmpty()) continue;
             Character type = line.charAt(0);
             String streetAddress = read.nextLine();
             String city = read.nextLine();
@@ -44,9 +47,16 @@ public class Test {
                 dwellingList.add(newApartment);
             }
         }
-            for (int i =0; i<dwellingList.size();i++ ) {
-                System.out.println(dwellingList.get(i));
-            }
+        output();
+
+    }
+    public static void output(){
+        JFrame frame = new JFrame();
+        for (int i = 0; i < dwellingList.size(); i++) {
+            JOptionPane.showMessageDialog(frame,
+                    dwellingList.get(i));
         }
+    }
+
 }
 
